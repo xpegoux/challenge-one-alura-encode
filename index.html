@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- defer: carrega depois do HTML-->
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1 class="titulo-principal">Encoder Master</h1>
+            <a href="index.html"><img src="img/key.png" class="logo" width="50px" height="50px"></a>
+        </div>
+    </header>
+    <main>
+        <textarea class="digite-texto" placeholder="Digite seu texto aqui" id="digiteTexto"></textarea>        
+
+        <div class="rectangle 1"></div>
+        <div class="semResultado">
+            <img src="img/cadeado.png" class="cadeado">
+            <p class="notfound">O Resultado Aparecerá Aqui!</p>
+            <p class="texto-example">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+        </div>
+
+        <div class="comResultado">
+            <textarea class="texto-codificado" id="textoCodificado" readonly></textarea>
+            <p class="sucess-encode">Gerado com Sucesso!</p>
+            <p class="texto-decode">
+                Para decodificar, basta clicar no botão <strong>Copiar</strong> abaixo e depois colar e descriptografar.
+            </p>
+        </div>
+
+        <div class="letras-minusculas">
+            <img src="img/bi_exclamation-circle-fill.png" class="exclamation">
+            <p class="letrasMinusculas">Apenas letras minúsculas sem acento</p>
+        </div>
+
+        <div class="botoes">
+            <button class="button-criptografar" id="buttonEncode">
+                <p class="text-criptografar">Criptografar</p>
+            </button>
+
+            <button class="button-descriptografar" id="buttonDecode">
+                <p class="text-descriptografar">Descriptografar</p>
+            </button>
+        </div>
+
+        <div class="buttonCopy">            
+            <button class="button-copy">
+                <p class="text-copy">Copiar</p>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Erivaldo Barros (Alura - 2022)</p>
+
+        <p class="in">Linkedin</p>
+        <a href="https://www.linkedin.com/in/erivaldobarros/" hreflang="pt-br" target=“_blank” rel=“external”>
+            <img src="img/lindekin.png">
+        </a>
+
+        <p class="github">GitHub</p>
+        <a href="https://www.github.com/xpegoux/" hreflang="pt-br" target=“_blank” rel=“external”>            
+            <img src="img/github.png">
+        </a>
+    </footer>
+</body>
+
+</html>

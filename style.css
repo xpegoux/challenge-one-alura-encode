@@ -1,0 +1,387 @@
+body {
+    background-image: linear-gradient(180deg, rgb(4, 159, 248), rgb(138, 204, 241));
+}
+
+/* HEADER */
+header {
+    padding: 10px 0;
+}
+
+.box {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* ENCODER MASTER - TITLE*/
+.titulo-principal {
+    position: relative;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 50px;
+    color: #a9f5ff;
+
+    box-shadow: 0 0 10px rgb(5, 46, 122);
+    text-shadow: rgb(5, 46, 122) 2px 3px 2px;
+
+    border-radius: 10px;
+}
+
+/* LOGO key */
+.logo {
+    position: absolute;
+    bottom: 5px;
+    max-width: 100%;
+}
+
+/* MAIN CONFIGS */
+
+main {
+    width: 1100px;
+    height: 620px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* DIGITE SEU TEXTO */
+.digite-texto {
+    position: absolute;
+    width: 640px;
+    height: 300px;
+    padding: 0 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+    color: #0A3871;
+    background-color: #d8eff1c9;
+    border-radius: 20px;
+
+    box-shadow: 0 0 10px rgb(5, 46, 122);
+
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0A3871;
+  }
+
+/* RECTANGLE MODEL */
+.rectangle {
+    position: relative;
+    width: 400px;
+    height: 460px;
+    left: 690px;
+    bottom: 10px;
+    max-width: 100%;
+
+    background: #d8eff1c9;
+
+    box-shadow: 0 0 10px rgb(5, 46, 122);
+
+    border-radius: 32px;
+}
+
+
+/*text: resultado aparecerá aqui*/
+.semResultado {
+    display: inline-block;
+}
+
+/* logo pre resultado */
+.cadeado {
+    position: absolute;
+    width: 290px;
+    height: 240px;
+    left: 870px;
+    bottom: 225px;
+    max-width: 100%;
+}
+
+/*Nenhuma mensagem encontrada*/
+.notfound {
+    position: absolute;
+    width: 336px;
+    height: 30px;
+    left: 845px;
+    bottom: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 120%;
+
+    text-align: center;
+    color: #0A3871;
+}
+
+/* Digite um texto que você deseja criptografar ou descriptografar. */
+.texto-example {
+    position: absolute;
+    width: 336px;
+    height: 30px;
+    left: 845px;
+    bottom: 80px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #0A3871;
+}
+
+.comResultado {
+    display: none;
+}
+/* resultado codificado */
+.texto-codificado {    
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    left: 850px;
+    bottom: 210px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    
+    background: #d8eff100;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* Condificado/decodificado com sucesso */
+.sucess-encode {
+    display: inline-block;
+    position: absolute;
+    width: 336px;
+    height: 30px;
+    left: 840px;
+    bottom: 155px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 120%;
+
+    text-align: center;
+    color: #0A3871;
+}
+
+/* infos: para codificar, basta clicar em copiar... */
+.texto-decode {
+    position: absolute;
+    width: 336px;
+    height: 30px;
+    left: 840px;
+    bottom: 125px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #0A3871;
+}
+
+/* Letras Minusculas DIV CONFIGS*/
+.letras-minusculas {
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: relative;
+    left: 20px;
+    bottom: 150px;
+}
+
+/* Texto - Apenas letras minúsculas e sem acento. */
+.letrasMinusculas {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15%;
+
+    color: #242629;
+    opacity: 0.8;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* BOTÕES */
+
+.botoes {
+    padding: 0px;
+
+    position: relative;
+    left: 0px;
+    bottom: 133px;
+}
+
+/*Criptografar Configs (button and text) */
+.button-criptografar {
+    padding: 16px;
+    
+    width: 328px;
+    height: 67px;
+       
+    background: #0A3871;
+    border-radius: 24px;
+}
+
+.button-criptografar:hover {
+    background: #021a38;
+}
+
+.button-criptografar:active {
+    background: #1259af;
+}
+
+.text-criptografar {
+    width: 280px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*Descriptografar Configs (button and text) */
+.button-descriptografar {
+    padding: 16px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.button-descriptografar:hover {
+    background: #9b9c9c;
+}
+
+.button-descriptografar:active {
+    background: #fafbfc;
+}
+
+.text-descriptografar {
+    width: 280px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    
+    color: #0A3871;
+}
+
+/*Copy Configs (button and text) */
+.buttonCopy {
+    display: none;
+    position: relative;
+    left: 735px;
+    bottom: 200px;
+}
+
+.button-copy {
+    padding: 16px;
+    gap: 8px;
+    width: 315px;
+    height: 67px;
+
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.button-copy:hover {
+    background: #9b9c9c;
+}
+
+.button-copy:active {
+    background: #fafbfc;
+}
+
+.text-copy {
+    width: 280px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    
+    color: #0A3871;
+}
+
+/* FOOTER CONFIGS */
+
+footer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #0A3871;
+    text-align: center;
+
+    padding: 20px 0;
+}
+
+.in {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    
+    color: #0A3871;
+}
+
+.github {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;   
+
+    margin-left: 19px;
+
+    color: #0A3871;
+}
