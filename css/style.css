@@ -4,12 +4,16 @@ body {
 
 /* HEADER */
 header {
-    padding: 10px 0;
+    padding: 30px 0;
+    margin: 20px 0;
+    box-shadow: 10px 10px 10px rgb(5, 46, 122);
+
+    border-radius: 10px;
 }
 
 .box {
     position: relative;
-    width: 1100px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -23,34 +27,29 @@ header {
     font-size: 50px;
     color: #a9f5ff;
 
-    box-shadow: 0 0 10px rgb(5, 46, 122);
-    text-shadow: rgb(5, 46, 122) 2px 3px 2px;
-
-    border-radius: 10px;
+    text-shadow: 2px 3px 2px rgb(5, 46, 122);
 }
 
 /* LOGO key */
 .logo {
     position: absolute;
     bottom: 5px;
-    max-width: 100%;
 }
 
 /* MAIN CONFIGS */
-
 main {
-    width: 1100px;
-    height: 620px;
+    width: 940px;
     margin: 0 auto;
     padding: 10px 0;
 }
 
 /* DIGITE SEU TEXTO */
 .digite-texto {
-    position: absolute;
-    width: 640px;
+    display: inline-block;
+    width: 45%;
     height: 300px;
     padding: 0 10px;
+    margin: 0 30px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -58,6 +57,8 @@ main {
     font-size: 32px;
     line-height: 150%;
     
+    vertical-align: top;
+
     color: #0A3871;
     background-color: #d8eff1c9;
     border-radius: 20px;
@@ -71,86 +72,68 @@ main {
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #0A3871;
-  }
+}
+.digite-texto:hover {
+    box-shadow: 0 0 10px rgb(4, 255, 222);
+}
 
 /* RECTANGLE MODEL */
 .rectangle {
-    position: relative;
-    width: 400px;
-    height: 460px;
-    left: 690px;
-    bottom: 10px;
-    max-width: 100%;
-
+    display: inline-block;
+    width: 45%;
+    height: 300px;
+    
     background: #d8eff1c9;
 
     box-shadow: 0 0 10px rgb(5, 46, 122);
-
     border-radius: 32px;
 }
-
+.rectangle:hover {
+    box-shadow: 0 0 10px rgb(4, 255, 222);
+}
 
 /*text: resultado aparecerá aqui*/
 .semResultado {
+    margin: 20px 0;
+    padding: 20px 0;
+    position: absolute;
     display: inline-block;
+    text-align: center;
+    
+    left: 740px;
 }
 
 /* logo pre resultado */
 .cadeado {
-    position: absolute;
-    width: 290px;
-    height: 240px;
-    left: 870px;
-    bottom: 225px;
-    max-width: 100%;
+    position: relative;
+    width: 200px;
+    height: 150px;
 }
 
-/*Nenhuma mensagem encontrada*/
+/*O Resultado Aparecerá Aqui!*/
 .notfound {
-    position: absolute;
-    width: 336px;
-    height: 30px;
-    left: 845px;
-    bottom: 150px;
-
+    position: relative;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 29px;
     line-height: 120%;
-
-    text-align: center;
-    color: #0A3871;
-}
-
-/* Digite um texto que você deseja criptografar ou descriptografar. */
-.texto-example {
-    position: absolute;
-    width: 336px;
-    height: 30px;
-    left: 845px;
-    bottom: 80px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-
-    text-align: center;
+    margin: 20px 0;
     color: #0A3871;
 }
 
 .comResultado {
     display: none;
+    position: absolute;
+
+    text-align: center;
+    left: 760px;
 }
 /* resultado codificado */
-.texto-codificado {    
-    position: absolute;
+.texto-codificado {  
+    position: relative;  
     width: 330px;
     height: 250px;
-    left: 850px;
-    bottom: 210px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -167,12 +150,10 @@ main {
 
 /* Condificado/decodificado com sucesso */
 .sucess-encode {
-    display: inline-block;
-    position: absolute;
+    position: relative;
     width: 336px;
     height: 30px;
-    left: 840px;
-    bottom: 155px;
+    bottom: 50px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -186,11 +167,11 @@ main {
 
 /* infos: para codificar, basta clicar em copiar... */
 .texto-decode {
-    position: absolute;
+    position: relative;
     width: 336px;
     height: 30px;
-    left: 840px;
-    bottom: 125px;
+    bottom: 50px;
+    margin: 10px 0;
     
     font-family: 'Inter';
     font-style: normal;
@@ -198,19 +179,18 @@ main {
     font-size: 16px;
     line-height: 150%;
 
-    text-align: center;
     color: #0A3871;
+}
+
+.texto-decode strong {
+    font-weight: bold;
 }
 
 /* Letras Minusculas DIV CONFIGS*/
 .letras-minusculas {
+    display: block;
     align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    position: relative;
-    left: 20px;
-    bottom: 150px;
+    margin: 5px 40px;
 }
 
 /* Texto - Apenas letras minúsculas e sem acento. */
@@ -231,21 +211,16 @@ main {
 }
 
 /* BOTÕES */
-
 .botoes {
-    padding: 0px;
-
-    position: relative;
-    left: 0px;
-    bottom: 133px;
+    display: inline-block;
+    margin: 10px 30px;
 }
 
 /*Criptografar Configs (button and text) */
 .button-criptografar {
-    padding: 16px;
-    
-    width: 328px;
-    height: 67px;
+    padding: 20px;
+    width: 200px;
+    height: 10px;
        
     background: #0A3871;
     border-radius: 24px;
@@ -260,9 +235,8 @@ main {
 }
 
 .text-criptografar {
-    width: 280px;
-    height: 19px;
-    
+    position: relative;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -275,10 +249,9 @@ main {
 
 /*Descriptografar Configs (button and text) */
 .button-descriptografar {
-    padding: 16px;
-
-    width: 328px;
-    height: 67px;
+    padding: 20px;
+    width: 200px;
+    height: 10px;
 
     background: #D8DFE8;
 
@@ -295,8 +268,7 @@ main {
 }
 
 .text-descriptografar {
-    width: 280px;
-    height: 19px;
+    position: relative;
     
     font-family: 'Inter';
     font-style: normal;
@@ -311,16 +283,13 @@ main {
 /*Copy Configs (button and text) */
 .buttonCopy {
     display: none;
-    position: relative;
-    left: 735px;
-    bottom: 200px;
+    margin: 10px 135px;
 }
 
 .button-copy {
-    padding: 16px;
-    gap: 8px;
-    width: 315px;
-    height: 67px;
+    padding: 20px;
+    width: 200px;
+    height: 10px;
 
     background: #D8DFE8;
 
@@ -337,8 +306,7 @@ main {
 }
 
 .text-copy {
-    width: 280px;
-    height: 19px;
+    position: relative;
     
     font-family: 'Inter';
     font-style: normal;
@@ -384,4 +352,72 @@ footer {
     margin-left: 19px;
 
     color: #0A3871;
+}
+
+@media screen and (max-width: 414px) {
+    header, .box, .titulo-principal, main, .digite-texto, .rectangle, .letras-minusculas, .botoes, .buttonCopy, footer {
+        width: auto;
+    }
+
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+
+    .digite-texto, .rectangle {
+        margin: 10px 35px;
+        position: relative;
+        display: block;
+    }
+
+    .rectangle {
+        top: 90px;
+    }
+
+    .semResultado {
+        position: absolute;;
+    }
+
+    .cadeado {
+        position: relative;
+        right: 42em;
+    }
+
+    .notfound {
+        font-size: 20px;
+        position: relative;
+        right: 33.5em;
+    }
+
+    .texto-codificado {
+        position: relative;
+        right: 29.5em;
+        margin: 0 10px;
+    }
+    
+    .sucess-encode {
+        position: relative;
+        right: 26.5em;
+        margin: 0 10px;
+    }
+
+    .texto-decode {
+        position: relative;
+        right: 47.5em;
+        margin: 0 5px;
+    }
+
+    .botoes, .letras-minusculas {
+        position: relative;
+        bottom: 310px;
+    }
+
+    .button-copy, .button-criptografar, .button-descriptografar {
+        width: 150px;
+        margin: 0 5px;
+    }
+
+    .footer {
+        position: relative;
+    }
+   
 }
