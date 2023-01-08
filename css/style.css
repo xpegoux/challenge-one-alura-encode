@@ -354,7 +354,7 @@ footer {
     color: #0A3871;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
     header, .box, .titulo-principal, main, .digite-texto, .rectangle, .letras-minusculas, .botoes, .buttonCopy, footer {
         width: auto;
     }
