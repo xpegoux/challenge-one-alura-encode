@@ -125,6 +125,7 @@ if (buttonEncode) { //Evitar o erro null
     });
 }
 
+
 if (buttonDecode) { //Evitar o erro null
 
     buttonDecode.addEventListener('click', () => {

@@ -5,9 +5,9 @@ body {
 /* HEADER */
 header {
     padding: 30px 0;
-    margin: 20px 0;
+    margin: 15px 0;
     box-shadow: 10px 10px 10px rgb(5, 46, 122);
-
+    width: 0 940px;
     border-radius: 10px;
 }
 
@@ -34,6 +34,7 @@ header {
 .logo {
     position: absolute;
     bottom: 5px;
+    margin: 0 20px;
 }
 
 /* MAIN CONFIGS */
@@ -94,13 +95,12 @@ main {
 
 /*text: resultado aparecerá aqui*/
 .semResultado {
-    margin: 20px 0;
-    padding: 20px 0;
+    margin: 20px 15px;
+    padding: 20px 15px;
     position: absolute;
     display: inline-block;
     text-align: center;
-    
-    left: 740px;
+
 }
 
 /* logo pre resultado */
@@ -354,70 +354,169 @@ footer {
     color: #0A3871;
 }
 
-@media screen and (max-width: 480px) {
-    header, .box, .titulo-principal, main, .digite-texto, .rectangle, .letras-minusculas, .botoes, .buttonCopy, footer {
+
+@media screen and (max-width: 1080px) {
+    .semResultado, .comResultado {
+        position: static;
+        margin: 0 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header, .box, .titulo-principal, main, .digite-texto, .rectangle, .letras-minusculas, .botoes, .buttonCopy, footer  {
         width: auto;
     }
-
-    .titulo-principal {
-        font-size: 2.5em;
+    main {
+        margin: 0 115px;
     }
-
+    .titulo-principal {
+        font-size: 4em;
+    }
     .digite-texto, .rectangle {
-        margin: 10px 35px;
+        margin: 10px 0;
         position: relative;
         display: block;
+        width: 535px;
+        height: 300px;
     }
-
+    .digite-texto {
+        font-size: 28px;
+    }
     .rectangle {
         top: 90px;
     }
 
     .semResultado {
-        position: absolute;;
+        position: absolute;
+        left: 0;
+        margin: 5% 30%;
     }
 
-    .cadeado {
+    .cadeado, .notfound {
         position: relative;
-        right: 42em;
-    }
-
-    .notfound {
         font-size: 20px;
-        position: relative;
-        right: 33.5em;
     }
 
-    .texto-codificado {
-        position: relative;
-        right: 29.5em;
-        margin: 0 10px;
+    .comResultado {
+        position: absolute;
+        left: 0;
+        margin: 0% 19%;
     }
-    
-    .sucess-encode {
+
+    .texto-codificado, .sucess-encode {
         position: relative;
-        right: 26.5em;
-        margin: 0 10px;
+        font-size: 24px;
     }
 
     .texto-decode {
         position: relative;
-        right: 47.5em;
-        margin: 0 5px;
+        font-size: 14px;
     }
 
     .botoes, .letras-minusculas {
         position: relative;
         bottom: 310px;
+        margin: 2px;
+        width: 550px;
     }
-
-    .button-copy, .button-criptografar, .button-descriptografar {
-        width: 150px;
+    .letrasMinusculas {
+        font-size: 18px;
+    }
+    .text-copy, .text-criptografar, .text-descriptografar {
+        font-size: 16px;
+    }
+    .button-criptografar, .button-descriptografar {
+        width: 210px;
         margin: 0 5px;
     }
 
-    .footer {
+    .button-copy {
+        position: relative;
+        width: 210px;
+        margin: 10px 5px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header, .box, .titulo-principal, main, .digite-texto, .rectangle, .letras-minusculas, .botoes, .buttonCopy, footer  {
+        width: auto;
+    }
+    main {
+        margin: 0 115px;
+    }
+    .titulo-principal {
+        font-size: 2em;
+    }
+    .digite-texto, .rectangle {
+        margin: 10px 0;
+        position: relative;
+        display: block;
+        width: 235px;
+        height: 300px;
+    }
+    .digite-texto {
+        font-size: 20px;
+    }
+    .rectangle {
+        top: 90px;
+    }
+
+    .semResultado {
+        position: absolute;
+        margin: auto;
+    }
+
+    .notfound, .cadeado {
+        font-size: 20px;
         position: relative;
     }
-   
+
+    .comResultado {
+        position: absolute;
+        margin: auto;
+        width: 235px;
+    }
+    .texto-codificado {
+        width: 235px;
+        position: relative;
+        margin: 0 20px;
+        font-size: 16px;
+    }
+    .sucess-encode {
+        position: relative;
+        width: 235px;
+        font-size: 20px;
+    }
+
+    .texto-decode {
+        position: relative;
+        margin: 0 5em;
+        font-size: 9px;
+        width: 150px;
+    }
+
+    .botoes, .letras-minusculas {
+        position: relative;
+        bottom: 310px;
+        margin: 0 auto;
+    }
+    .letrasMinusculas {
+        font-size: 8px;
+    }
+    .text-copy, .text-criptografar, .text-descriptografar {
+        font-size: 10px;
+    }
+    .button-criptografar, .button-descriptografar {
+        width: 85px;
+    }
+    .buttonCopy {
+        position: relative;
+        margin: 10px 55px;
+    }
+    .button-copy {
+        position: relative;
+        width: 110px;
+        margin: 10px 5px;
+    }
 }
